@@ -1,0 +1,35 @@
+//--KLEUREN--//
+$back-zwart: #000;
+$text: #282727;
+$primary-color: #02B19A;
+$secondary-color: #007EC3;
+$donker-grijs:#FFFFF0;
+$grijs: #efefef;
+$geel: #f9dc4a;
+$paars: #7460a0;
+
+.bg-secondary
+{
+    background-color: $secondary-color;
+}
+
+.bg-primary
+{
+    background-color: $primary-color;
+}
+
+.bg-white 
+{
+    background-color: #fff;
+}
+
+.bg-grijs 
+{
+    background-color: $grijs;
+}
+
+
+.bg-paars 
+{
+    background-color: $paars;
+}

@@ -1,0 +1,16 @@
+{
+    "name": "acf/multistep-form",
+    "title": "multistep form",
+    "description": "Een simpel multistep form.",
+    "category": "layout",
+    "icon": "layout",
+    "keywords": ["post", "list", "quote"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./multistep-form.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

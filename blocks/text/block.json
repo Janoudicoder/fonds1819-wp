@@ -1,0 +1,16 @@
+{
+    "name": "acf/text",
+    "title": "Tekst blok",
+    "description": "Een simpel tekst blok.",
+    "category": "layout",
+    "icon": "layout",
+    "keywords": ["post", "list", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./text.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

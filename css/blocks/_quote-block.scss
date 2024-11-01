@@ -1,0 +1,17 @@
+.quote-block
+{
+    .container 
+    {
+        background-size: cover;
+        background-position: center;
+    
+        .quote 
+        {
+            font-size: 5vw;
+            @include mq ($tailwind_md)
+            {
+                font-size: 30px;
+            }
+        }
+    }
+}

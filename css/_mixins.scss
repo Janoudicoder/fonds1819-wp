@@ -1,0 +1,111 @@
+@mixin scrollbars($size, $foreground-color, $background-color: #f5f6fa) {
+  ::-webkit-scrollbar {
+    width:  $size;
+    height: $size;
+    border-radius: 5px;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: $foreground-color;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: $background-color;
+    border: 0;
+  }
+  
+  // For Internet Explorer
+  body {
+    scrollbar-face-color: $foreground-color;
+    scrollbar-track-color: $background-color;
+  }
+}
+
+@mixin selection($background-color,$foreground-color: #fff, ){
+  ::-moz-selection { /* Code for Firefox */
+    color: $foreground-color;
+    background: $background-color;
+  }
+  
+  ::selection {
+    color: $foreground-color;
+    background: $background-color;
+  }
+}
+
+@mixin vierkant($breedte, $hoogte, $backgroundcolor) {
+  width: $breedte;
+  height: $hoogte;
+  background-color: $backgroundcolor;
+}
+
+@mixin fa(){
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+@mixin transition ($value) {
+  -webkit-transition: all ease-in-out $value;
+  -moz-transition: all ease-in-out $value;
+  transition: all ease-in-out $value;
+}
+
+@mixin appearance ($value) {
+  -webkit-appearance: $value;
+  -moz-appearance: $value;
+  appearance: $value;
+}
+
+@mixin boxshadow ($value) {
+    -webkit-box-shadow: $value;
+    -moz-box-shadow: $value;
+    box-shadow: $value;
+}
+
+@mixin radius ($value) {
+    -webkit-border-radius: $value;
+    -moz-border-radius: $value;
+    border-radius: $value;
+}
+
+@mixin bgsize ($value) {
+    -webkit-background-size: $value; 
+    -moz-background-size: $value; 
+    background-size: $value; 
+}
+
+@mixin clearfix() {
+    &:before,
+    &:after {
+        content: "";
+        display: table;
+    }
+    &:after {
+        clear: both;
+    }
+}
+
+@mixin linkalgemeen ($link, $visit, $hover, $active) {
+  a {
+    transition: all 0.3s ease-out;
+    color: $link;
+    
+    &:visited {
+
+      color: $visit;
+
+    }
+    &:hover {
+
+      color: $hover;   
+    }
+
+    &:active {
+
+      color: $active;
+
+    }
+  }
+}

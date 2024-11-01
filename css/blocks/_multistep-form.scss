@@ -1,0 +1,70 @@
+.multiestep-form{
+    p {
+        font-size: 18px;
+    }
+    h2 {
+        font-size: 25px; /* Adjust heading size for smaller screens */
+    }
+    border-bottom-right-radius: 45px; /* More rounded on the bottom-right corner */
+
+
+    .text-center-custom {
+        text-align: center; /* Center the text */
+      //  width: 100%; /* Ensure the text takes the full width */
+    }
+
+    .form-container {
+        box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2); /* Softer shadow */
+        border-radius: 8px; /* Slightly rounded corners */
+        margin: 0 auto; /* Center the container */
+        width: 863px; /* Fixed width on larger screens */
+        height: 411px; /* Fixed height on larger screens */
+    }
+
+    @media (max-width: 768px) {
+        .form-container {
+            width: 90%; /* Make the container responsive */
+            height: auto; /* Allow height to adjust */
+            padding: 16px; /* Adjust padding for smaller screens */
+        }
+
+        h2 {
+            font-size: 25px; /* Adjust heading size for smaller screens */
+        }
+
+        p {
+            font-size: 18px; /* Adjust paragraph font size */
+        }
+
+        .confirmation-bg {
+            padding: 2px; /* Adjust padding for the confirmation background */
+        }
+
+        .flex {
+            flex-direction: row; /* Stack items vertically */
+            align-items: stretch; /* Stretch items to full width */
+        }
+
+        button {
+            width: 100%; /* Make buttons full width */
+            margin-top: 8px; /* Add margin for spacing */
+        }
+
+        .btn-slider {
+            width: 48%; /* Adjust button width for better spacing */
+            margin: 4px 0; /* Margin for vertical spacing */
+        }
+    }
+    .svg {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: -140px; // Adjust as needed to align with caption
+        left: -102px;
+        bottom: 80px;
+    }
+    
+    
+
+
+}

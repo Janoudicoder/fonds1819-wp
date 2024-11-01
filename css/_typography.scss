@@ -1,0 +1,149 @@
+$hoofdfont: 'Alegreya';
+$subfont: 'Source Sans Pro';
+
+//--BASIS--//
+$font-size-base: 16px;
+
+body {
+    font-size: $font-size-base;
+    line-height: 1.5;
+}
+
+//--HEADERS--//
+$headings: h1 h2 h3 h4 h5 h6;
+$font-size-upper: 42px;
+$font-size-dec: 6px;
+
+@each $heading in $headings {
+    #{$heading} {
+        font-size: $font-size-upper;
+        line-height: $font-size-upper;
+        font-size: ($font-size-upper / $font-size-base) + em;
+
+        // Set font for h1 specifically
+        @if $heading == h1 {
+            font-family: 'Alegreya'; // Change font for h1 to Alegreya
+            line-height: 1.2; // Custom line height for h1 to ensure enough spacing
+        } @else {
+            font-family: $hoofdfont; // Default font for other headings
+        }
+    }
+    $font-size-upper: $font-size-upper - $font-size-dec;
+}
+
+@include mq($tailwind_lg) {
+    //--HEADERS--//
+    $headings: h1 h2 h3 h4 h5 h6;
+    $font-size-upper: 35px;
+    $font-size-dec: 5px;
+
+    @each $heading in $headings {
+        #{$heading} {
+            font-size: $font-size-upper;
+            font-size: ($font-size-upper / $font-size-base) + em;
+
+            // Set font for h1 specifically
+            @if $heading == h1 {
+                font-family: 'Alegreya'; // Change font for h1 to Alegreya
+                line-height: 1.2; // Custom line height for h1
+            } @else {
+                font-family: $hoofdfont; // Default font for other headings
+            }
+        }
+        $font-size-upper: $font-size-upper - $font-size-dec;
+    }
+}
+
+@include mq($tailwind_md) {
+    //--HEADERS--//
+    $headings: h1 h2 h3 h4 h5 h6;
+    $font-size-upper: 35px;
+    $font-size-dec: 5px;
+
+    @each $heading in $headings {
+        #{$heading} {
+            font-size: $font-size-upper;
+            font-size: ($font-size-upper / $font-size-base) + em;
+
+            // Set font for h1 specifically
+            @if $heading == h1 {
+                font-family: 'Alegreya'; // Change font for h1 to Alegreya
+                line-height: 1.2; // Custom line height for h1
+            } @else {
+                font-family: $hoofdfont; // Default font for other headings
+            }
+        }
+        $font-size-upper: $font-size-upper - $font-size-dec;
+    }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.standaard-content {
+  font-family: $subfont; // Stel het standaardlettertype in voor de hele sectie
+
+  // Stijl voor paragrafen
+  p {
+      margin-bottom: 1rem; // Ruimte onder paragrafen
+      font-size: 18px; // Stel het lettertypegrootte in
+  }
+
+  // Stijl voor sterke elementen
+  strong {
+      color: #383838; // Stel de tekstkleur in
+  }
+
+  // Stijl voor anker elementen
+  a {
+      color: $primary-color; // Stel de linkkleur in
+      text-decoration: underline; // Onderstreep links
+      @include transition(300ms); // Voeg een overgangseffect toe
+
+      // Stijl voor hover-effect
+      &:hover {
+          color: darken($primary-color, 10%); // Donker de kleur bij hover
+      }
+  }
+
+  // Stijl voor links die in een nieuw tabblad openen
+  a[target=_blank] {
+      display: inline-flex; // Align iconen met tekst
+      align-items: center; // Center items verticaal
+
+      // Stijl voor het pictogram na de link
+      &:after {
+          color: $primary-color; // Pictogramkleur
+          @include fa(); // Voeg Font Awesome-stijlen toe
+          font-weight: 600; // Vet gewicht voor het pictogram
+          content: "\f08e"; // Font Awesome-pictogram inhoud
+          font-family: "Font Awesome 5 Pro"; // Specificeer de Font Awesome lettertypefamilie
+          @include transition(300ms); // Voeg een overgangseffect toe voor het pictogram
+          margin-left: 5px; // Ruimte tussen tekst en pictogram
+      }
+  }
+
+  // Stijl voor iframes
+  iframe {
+      max-width: 100%; // Maak iframe responsief
+      height: auto; // Behoud de aspectverhouding
+  }
+}
+
+
+
+.big-title {
+    font-size: 48px;
+    @include mq($tailwind_lg) {
+        font-size: 40px;
+    }
+    @include mq($tailwind_md) {
+        font-size: 35px;
+    }
+}
+
+.text-secondary {
+    color: $paars;
+}

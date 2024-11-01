@@ -1,0 +1,16 @@
+{
+    "name": "acf/text-img",
+    "title": "text and image",
+    "description": "A custom text and image block.",
+    "category": "layout",
+    "icon": "layout",
+    "keywords": ["image", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./text-img.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

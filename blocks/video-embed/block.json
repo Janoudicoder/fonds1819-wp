@@ -1,0 +1,18 @@
+{
+    "name": "acf/video-embed",
+    "title": "Video embed",
+    "description": "Embed hier een youtube video",
+    "category": "layout",
+    "icon": "format-video",
+    "keywords": ["video", "youtube"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./video-embed.php"
+    },
+    "align": "full",
+ 
+    "supports": {
+        "align": false
+    }
+
+}

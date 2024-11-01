@@ -1,0 +1,135 @@
+.item-block {
+    position: relative; /* Ensure proper positioning */
+    overflow: hidden; /* Prevents overflow from child elements */
+    width: 100%; /* Full width by default */
+    max-width: 500px; /* Limit the maximum width */
+    height: auto; /* Allow height to adapt to content */
+    display: inline-block; /* Display blocks in a single line if space allows */
+    margin: 0 10px; /* Margin between item blocks */
+    transition: transform 300ms; /* Smooth hover effect */
+    .svg{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        margin-top: -140px; // Adjust as needed to align with caption
+        left: -50px;
+        bottom: 80px;
+    }
+
+    .image-container {
+        position: relative; /* Keep the image relative */
+        width: 100%; /* Responsive image width */
+        padding-bottom: 110%; /* Maintain aspect ratio */
+        overflow: hidden; /* Prevent image overflow */
+
+        .block-image {
+            width: 100%; /* Ensure the image covers the container */
+            height: 100%; /* Set to fill the height of the container */
+            object-fit: cover; /* Keep the image aspect ratio */
+            object-position: center; /* Center the image */
+        }
+    }
+
+    &:hover {
+        transform: scale(1.05); /* Slightly enlarge the item on hover */
+
+        &::before {
+            height: 100%; /* Full height on hover */
+            background: rgba(2, 177, 154, 0.6); /* Use a solid color with opacity */
+        }
+
+        .content {
+            .btn-wrapper {
+                max-height: 100px; /* Adjust the button wrapper on hover */
+            }
+        }
+    }
+
+    .font-merriweather {
+        font-family: 'Merriweather', serif; /* Specify the font family */
+    }
+    
+    .big-title {
+        font-size: 1.5rem; /* Adjust font size for responsive text */
+        line-height: 1.5; /* Better line spacing */
+        margin-bottom: 0.5rem; /* Space below the title */
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        z-index: 11;
+        width: 100%;
+        height: 50%; /* Initial height of the gradient overlay */
+        background: transparent linear-gradient(180deg, rgba(2, 177, 154, 0) 0%, rgba(2, 177, 154, 1) 100%) no-repeat padding-box;
+        opacity: 0.6;
+        left: 0;
+        bottom: 0;
+        transition: height 300ms; /* Smooth transition for height */
+    }
+
+    .content {
+        .btn-wrapper {
+            max-height: 0; /* Hidden by default */
+            transition: max-height 300ms; /* Smooth transition for button visibility */
+            overflow: hidden; /* Prevent overflow when collapsed */
+        }
+    }
+}
+
+/* Media Query for Larger Screens (No change in size) */
+@media (min-width: 2123px) {
+    .item-block {
+        width: 500px; /* Fixed width on large screens */
+        height: 550px; /* Fixed height on large screens */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+        margin-right: 20px; /* Add right margin for spacing */
+        
+        /* Optional: Add extra margin on the last item in a row */
+        &:nth-child(3n) {
+            margin-right: 0; /* No margin on the last item */
+        }
+    }
+
+    .big-title {
+        font-size: 2rem; /* Larger font size for bigger screens */
+    }
+
+    .content {
+        .btn-wrapper {
+            max-height: 100px; /* Ensure buttons are visible on hover */
+        }
+    }
+}
+
+/* Media Query for Medium Screens */
+@media (min-width: 768px) and (max-width: 1023px) {
+    .item-block {
+        width: 100%; /* Full width for medium screens */
+        height: auto; /* Height adjusts based on content */
+        margin-bottom: 20px; /* Add bottom margin for spacing */
+    }
+
+    .big-title {
+        font-size: 1.75rem; /* Adjust font size */
+    }
+}
+
+/* Media Query for Small Screens */
+@media (max-width: 768px) {
+    .item-block {
+        width: 100%; /* Full width on small screens */
+        height: auto; /* Allow height to adapt to content */
+        margin-bottom: 20px; /* Ensure spacing between items */
+    }
+
+    .big-title {
+        font-size: 1.5rem; /* Smaller font size for small screens */
+    }
+
+    .content {
+        .btn-wrapper {
+            max-height: 50px; /* Adjust button height for smaller screens */
+        }
+    }
+}

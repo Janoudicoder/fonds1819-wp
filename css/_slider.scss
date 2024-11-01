@@ -1,0 +1,52 @@
+#slider-main {
+    padding-left: 0px;
+    padding-right: 0px;
+    margin-top: 190px;
+    position: relative;
+	@include mq (1440px)
+	{
+		margin-top: 151px;
+	}
+	@include mq (976px)
+	{
+		margin-top: 116px;
+	}
+	@include mq (765px)
+	{
+		margin-top: 98px;
+	}
+
+}
+//titel stylen
+.caption{
+    background: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    bottom: auto;
+    right: auto;
+    width: auto;
+    z-index: 3;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    padding: 30px 0;
+}
+.headtitle{
+    position: relative;
+    font-weight: 100;
+    letter-spacing: 15px;
+    font-size: 35px;
+    &:after{
+        content: '';
+        position: absolute;
+        bottom: -30px;
+        width: 60px;
+        height: 2px;
+        background: #fff;
+        left: calc(50% - 30px); 
+    }
+} 

@@ -1,0 +1,16 @@
+{
+    "name": "acf/quote",
+    "title": "Quote blok",
+    "description": "Een simpel quote blok.",
+    "category": "layout",
+    "icon": "layout",
+    "keywords": ["post", "list", "quote"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./quote.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

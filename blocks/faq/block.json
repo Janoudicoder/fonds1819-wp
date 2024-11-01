@@ -1,0 +1,16 @@
+{
+    "name": "acf/faq",
+    "title": "FAQ blok",
+    "description": "Een blok om veel gestelde vragen te tonen.",
+    "category": "layout",
+    "icon": "layout",
+    "keywords": ["faq", "list", "text"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./faq.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

@@ -1,0 +1,22 @@
+
+
+
+.wpcf7-form
+{
+    p 
+    {
+        margin-bottom: 1rem;
+        input,textarea
+        {
+            padding: 20px;
+            background-color: $grijs;
+            width: 100%;
+            color: $text;
+        }
+        textarea
+        {
+            height: 200px;
+            max-height: 300px;
+        }
+    }
+}

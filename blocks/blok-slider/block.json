@@ -1,0 +1,16 @@
+{
+    "name": "acf/blok-slider",
+    "title": "Blok slider",
+    "description": "Een slider van blokken",
+    "category": "layout",
+    "icon": "layout",
+    "keywords": ["grid"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./blok-slider.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

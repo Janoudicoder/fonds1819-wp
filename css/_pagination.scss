@@ -1,0 +1,87 @@
+.paginatie {
+    width: 100%;
+    overflow: hidden;
+    background-color: #000000;
+}
+
+.paginatie_inactief, .paginatie_actief {
+    margin-right: 10px;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease-out;
+    
+    &:hover {
+        background: #ccc;
+        color: #000;
+    }
+}
+
+.paginatie_inactief {
+    background: none;
+    color: #FFFFFF;
+    border: 1px solid #535353;
+}
+
+#paginatie_actief {
+    background: $primary-color;
+    color: #FFFFFF;
+    border: none;
+}
+
+#vorige, #volgende {
+    text-indent: -9999px;
+    height: 30px;
+    width: 30px;
+    margin-top: 0px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+    -webkit-appearance: none;
+    
+
+    &:hover {
+        background: #ccc;
+        color: #000;
+    }
+}
+
+.volgende-pijl, .vorige-pijl {
+    position: relative;
+
+    &:hover:after {
+        background: #ccc;
+        color: #000;
+    }
+
+    &:after {
+        @include fa();
+        font-family: "Font Awesome 5 Pro";
+        font-weight: 600;
+        color: #FFF;
+        display: block;
+        background-color: #535353;
+        font-size: 15px;
+        position: absolute;
+        z-index: 25;
+        text-align: center;
+        height: 30px;
+        width: 30px;
+        transition: all 0.3s ease-out;
+        left: 0;
+        top: -6px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+.volgende-pijl:after {
+    content: '\f105';
+}
+
+.vorige-pijl:after {
+    content: '\f104';
+}

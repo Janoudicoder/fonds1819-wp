@@ -1,0 +1,16 @@
+{
+    "name": "acf/hero-video",
+    "title": "Hero video",
+    "description": "A custom hero video block.",
+    "category": "layout",
+    "icon": "format-image",
+    "keywords": ["hero", "video"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./hero-video.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

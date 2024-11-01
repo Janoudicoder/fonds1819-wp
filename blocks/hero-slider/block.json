@@ -1,0 +1,22 @@
+{
+    "name": "acf/hero-slider",
+    "title": "Hero slider",
+    "description": "A custom hero slider block.",
+    "category": "layout",
+    "icon": "format-image",
+    "keywords": ["hero", "slider"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./hero-slider.php"
+    },
+    "align": "full",
+ 
+    "supports": {
+        "align": false
+    },
+    "example": {
+        "attributes": {
+            "message": "This is a notice!"
+        }
+    }
+}

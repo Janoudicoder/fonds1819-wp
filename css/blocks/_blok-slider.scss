@@ -1,0 +1,66 @@
+.blok-slider 
+{
+    margin-bottom: 66px!important;
+    /* the slides */
+    .slick-slide {
+        margin: 0 1rem;
+        @include mq ($tailwind_md)
+        {
+            margin: 0 5px;
+        }
+    }
+
+    /* the parent */
+    .slick-list {
+        margin: 0 -1rem;
+        @include mq ($tailwind_md)
+        {
+            margin: 0 -5px;
+        }
+        &:after 
+        {
+            content: "";
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 100%;
+            width: 100px;
+            background: linear-gradient(to right,rgba(255, 255, 255, 0) 0%,rgb(255, 255, 255) 100%);
+        }
+    }
+    .arrow-left, .arrow-right 
+    {
+        position: absolute;
+        bottom: -66px;
+        z-index: 11;
+        width: 50px;
+        height: 50px;
+        color: #fff;
+        background-color: $primary-color;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        @include transition(300ms);
+        cursor: pointer;
+        &:hover 
+        {
+            background-color: darken($color: $primary-color, $amount: 10);
+        }
+        &.slick-disabled 
+        {
+            cursor: not-allowed;
+            opacity: .5;
+        }
+
+    }
+    .arrow-left
+    {
+        left: 0;
+    }
+    .arrow-right
+    {
+        left: 66px;
+    }
+    
+}

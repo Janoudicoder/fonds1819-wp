@@ -1,0 +1,16 @@
+{
+    "name": "acf/afbeelding",
+    "title": "Afbeelding",
+    "description": "Een optie om een afbeelding te plaatsen",
+    "category": "layout",
+    "icon": "format-image",
+    "keywords": ["hero", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./afbeelding.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

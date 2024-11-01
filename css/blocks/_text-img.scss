@@ -1,0 +1,93 @@
+.text-wrapper
+{
+    position: relative;
+   
+
+// Make the section span full-width by removing unnecessary margins
+.container-fluid {
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.imgtext {
+    width: 653px;
+    align-self: center;
+    height: 366px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;  /* To center it horizontally */
+} 
+.tekst-afbeelding {
+    position: relative;
+}
+
+.tekst-afbeelding::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5); /* Example overlay color */
+    z-index: 1;
+}
+
+.container-fluid {
+    position: relative;
+    z-index: 2; /* Ensure content is above the overlay */
+}
+
+.w-custom {
+    width: 653px;
+    @media (min-width: 1024px) and (max-width: 1279px) {
+        width: 453px;
+    }
+
+    @media (min-width: 1280px) {
+        width: 653px;
+    }
+}
+
+.grid {
+    display: grid;
+    /* Add any additional grid styles here if needed */
+}
+
+@media (max-width: 640px) {
+    .text-wrapper {
+        padding: 1rem; /* Adjust padding for smaller screens */
+    }
+
+    .img-wrapper img {
+        /* Ensure image covers without stretching */
+        object-fit: cover; /* Keep the aspect ratio */
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media (min-width: 640px) {
+    .text-wrapper {
+        /* Adjust styles for larger screens */
+        padding: 1.5rem;
+    }
+}
+@media (min-width: 1025px) {
+    .imgtext{
+        width: 453px;
+    align-self: center;
+    height: 366px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 0 auto;  /* To center it horizontally */
+    }
+}
+
+}

@@ -1,0 +1,48 @@
+#footer-main {
+    
+    .foot-col {
+        padding-top: 0;
+        padding-bottom: 6;
+    
+        @media (min-width: 768px) {
+          padding-top: 8rem;
+          padding-bottom: 4rem;
+
+        }
+        h2{
+           font-size: 32px; 
+        }
+        p{
+            font-size: 14px;
+        }
+        ul {
+            font-size: 14px;
+
+            li {
+                // Remove display property to let the default work (inline-block is default for list items)
+                margin-bottom: 5px;
+
+                a {
+                    font-family: $subfont;
+                    display: inline-block; // Keep inline-block for proper padding
+                    min-width: 200px;
+                    max-width: 100%;
+                    color: #fff; // Text color
+                    padding: 5px 0; // Add padding top and bottom of 5px
+                    @include transition(300ms); // Add transition effect for smoothness
+                
+                    // Apply hover effect to the anchor
+                    &:hover {
+                        color: $primary-color; // Change text color on hover
+                    }
+                }
+                
+            }
+        }
+        
+        img {
+            max-width: 100%;
+            width: 200px;
+        }
+    }
+}

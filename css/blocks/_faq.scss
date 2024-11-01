@@ -1,0 +1,105 @@
+.faq-wrapper {
+    text-align: left;
+  }
+  .faq-wrapper .tab {
+    position: relative;
+    overflow: hidden;
+  }
+  .faq-wrapper .tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+  }
+  .faq-wrapper .tab input:checked ~ .tab-content {
+    max-height: none;
+  }
+  .faq-wrapper .tab label {
+    position: relative;
+    cursor: pointer;
+    -webkit-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+  .faq-wrapper .tab label:hover {
+    background-color: $grijs;
+  }
+  @media screen and (max-width: 700px) {
+    .faq-wrapper .tab label {
+      font-size: 16px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    .faq-wrapper .tab label {
+      font-size: 14px;
+    }
+  }
+  .faq-wrapper .tab .tab-content {
+    max-height: 0;
+    overflow: hidden;
+    background: #fff;
+  }
+  .faq-wrapper .tab .tab-content .tab-tekst a {
+    text-decoration: underline;
+  }
+  .faq-wrapper .tab .tab-content .tab-tekst ul {
+    list-style: none;
+  }
+  .faq-wrapper .tab .tab-content .tab-tekst ul li {
+    position: relative;
+    padding-left: 12px;
+  }
+  .faq-wrapper .tab .tab-content .tab-tekst ul li::before {
+    content: "";
+    height: 5px;
+    width: 5px;
+    position: absolute;
+    left: 0;
+    top: 8px;
+    border-radius: 20px;
+  }
+  .faq-wrapper .tab .tab-content .tab-tekst ul li a {
+    text-decoration: none;
+    color: #000;
+  }
+  .faq-wrapper .tab input[type=checkbox]:checked + label .icon {
+    span 
+    {
+      transform: rotate(90deg);
+    }
+    span:last-child {
+      left: 50%;
+      right: 50%;
+    }
+  }
+
+
+
+  .icon {
+    color: #000;
+    width: 50px;
+    height: 50px;
+    border: 0;
+    font-size: 1.5em;
+    position: relative;
+  }
+  
+  .icon span {
+    position: absolute;
+    transition: 300ms;
+    background: #000;
+  }
+  
+  /* Create the "+" shape by positioning the spans absolutely */
+  .icon span:first-child {
+    top: 25%;
+    bottom: 25%;
+    width: 10%;
+    left: 45%;
+  }
+  
+  .icon span:last-child {
+    left: 25%;
+    right: 25%;
+    height: 10%;
+    top: 45%;
+  }
+  

@@ -1,0 +1,16 @@
+{
+    "name": "acf/blok-overzicht-2",
+    "title": "Blok overzicht 2",
+    "description": "Een blok overzicht",
+    "category": "layout",
+    "icon": "layout",
+    "keywords": ["grid"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "./blok-overzicht-2.php"
+    },
+    "align": "full",
+    "supports": {
+        "align": false
+    }
+}

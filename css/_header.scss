@@ -1,0 +1,56 @@
+.form-wrapper 
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    background-color: #fff;
+    overflow: hidden;
+    pointer-events: none;
+    @include transition(300ms);
+    @include mq ($tailwind_md)
+    {
+        width: 70vw!important;
+        top: 45px;
+        right: 20%;
+        transform: translate(50%,0);
+        box-shadow: 0px 0px 56px rgb(152 152 152 / 20%);
+        border: none!important;
+    }
+    @include mq ($tailwind_sm)
+    {
+        
+        right: -30px;
+        
+    }
+    &.open 
+    {
+        display: block;
+        pointer-events: all;
+    }
+}
+
+
+#skiplink, #skiptarget
+{
+    opacity: 0;
+    &:focus 
+    {
+        opacity: 1;
+    }
+}
+
+
+.contact-info 
+{
+    .social-icon 
+    {
+        width: 40px;
+        height: 40px;
+        @include transition(300ms);
+        &:hover 
+        {
+            background-color: darken($color: $primary-color, $amount: 10);
+        }
+    }
+}
