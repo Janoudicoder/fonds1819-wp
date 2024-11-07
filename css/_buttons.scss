@@ -46,7 +46,8 @@
         padding: 15px 40px;
 
         &:hover {
-            background-color: darken($secondary-color, 10);
+            background-color: darken($donker-grijs, 5);
+            
         }
 
         /* Styling for the arrow on the secondary button */
@@ -78,44 +79,9 @@
         }
 
         /* Styling for the arrow on the block button */
-        &::after {
-            @include fa();
-            content: "\f054"; /* Unicode for FontAwesome right arrow icon */
-            font-family: "Font Awesome 5 Pro";
-            margin-left: 8px; /* Adjusted margin-left to make spacing smaller */
-            font-size: 12px; /* Reduced font size for the arrow */
-            color: #000000; /* Black color for the icon */
-            background-color: white; /* Primary color background for the icon */
-            padding: 6px; /* Reduced padding to shrink the circle */
-            border-radius: 50%; /* Still fully round */
-            font-weight: 600;
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            width: 24px; /* Reduced width */
-            height: 24px; /* Set height to match width for a smaller circle */
-        }
+        
     }
-    &.btn-slider {
-        width: 363px; /* Default width on larger screens */
-        height: 48px;
-        background-color: white;
-        color: black !important;
-        border-radius: 0.375rem;
-        border-bottom-right-radius: 25px; /* More rounded on the bottom-right corner */
-    
-        /* Center the text */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-       
-    
-        /* Hover effect */
-        &:hover {
-            background-color: darken($secondary-color, 10);
-            color: white !important;
-        }
-    }
+
     
     
     /* Responsive styles for small screens */
@@ -124,30 +90,60 @@
             width: 140px; /* Adjust width on small screens */
             margin: 4px 0; /* Optional: margin for spacing */
             height: 48px;
-        background-color: white;
-        color: black !important;
-        column-gap: 12px;
-        border-radius: 0.375rem;
-        border-bottom-right-radius: 25px; /* More rounded on the bottom-right corner */
-        
-        /* Center the text */
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        
-        /* Hover effect */
-       
-        &:hover {
-            background-color: darken($secondary-color, 10);
-            color: white !important;
+            background-color: white;
+            color: black !important;
+            column-gap: 12px;
+            border-radius: 0.375rem;
+            border-bottom-right-radius: 25px; /* More rounded on the bottom-right corner */
+            
+            /* Center the text */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            /* Hover effect */
+            &:hover {
+                background-color: darken($secondary-color, 10);
+                color: white !important;
+            }
         }
+    }
+    @media (max-width: 1255px) {
+        &.btn-secondary {
+            background-color: $donker-grijs;
+            color: #000000!important;
+            padding: 11px 15px;
+            font-size: 15px;
+
+    
+            &:hover {
+                background-color: darken($secondary-color, 10);
+            }
+    
+            /* Styling for the arrow on the secondary button */
+            &::after {
+                @include fa();
+                content: "\f054"; /* Unicode for FontAwesome right arrow icon */
+                font-family: "Font Awesome 5 Pro";
+                margin-left: 8px; /* Adjusted margin-left to make spacing smaller */
+                font-size: 12px; /* Reduced font size for the arrow */
+                color: #000000; /* Black color for the icon */
+                background-color: $primary-color; /* Primary color background for the icon */
+                padding: 6px; /* Reduced padding to shrink the circle */
+                border-radius: 50%; /* Still fully round */
+                font-weight: 600;
+                display: inline-flex;
+                justify-content: center;
+                align-items: center;
+                width: 24px; /* Reduced width */
+                height: 24px; /* Set height to match width for a smaller circle */
+            }
         }
+        font-size: 15px; /* Reduced font size for the arrow */
+        padding: 11px 20px;
 
     }
-    
-
-    
-
+}
 
 /* Style for form submit button */
 .wpcf7-submit {
@@ -161,5 +157,4 @@
     .btn, a[title='button'], .wpcf7-submit {
         font-size: 14px; /* Set font size to 14px on small screens */
     }
-}
 }

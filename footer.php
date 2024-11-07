@@ -2,7 +2,7 @@
 <footer>
     <section id="footer-main" class="bg-secondary text-white">
         <div class="container mx-auto p-6 grid pt-24 grid-cols-1 md:grid-cols-4 gap-4">
-            <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1">
+<div class="foot-col col-span-1 md:col-span-4 lg:col-span-1 md:pt-32" style="padding-top:4rem;">
                 <img id="logo" class="h-[4rem] mb-4" src="https://fonds1819.sitework.link/wp-content/uploads/2024/10/footerlogo.png" width="100%" border="0" alt="Naar de home page" />
             </div>
             <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1">
@@ -17,10 +17,10 @@
         </div>
     </section>
 	<section id="subFooter" class="bg-white">
-    <div class="container mx-auto py-4 flex flex-col md:flex-row md:justify-between md:items-center text-black">
-        <div class="left flex items-center justify-center md:justify-start">
+    <div class="container mx-auto py-4 flex  flex-col md:flex-row md:justify-between md:items-center text-black" style="font-family: poppins; " > 
+        <div class="left flex items-center  justify-center md:justify-start">
             <span class="text-center md:text-left">&copy; <?=date('Y');?>, Fonds 1819</span>
-            <span class="hidden md:inline md:ml-4">Disclaimer</span>
+            <span class="hidden md:inline  md:ml-4">Disclaimer</span>
             <span class="hidden md:inline md:ml-4">Privacyverklaring</span>
         </div>
         <div id="sitework" class="flex items-center justify-center mt-4 md:mt-0">

@@ -7,14 +7,7 @@
     display: inline-block; /* Display blocks in a single line if space allows */
     margin: 0 10px; /* Margin between item blocks */
     transition: transform 300ms; /* Smooth hover effect */
-    .svg{
-        position: relative;
-        display: flex;
-        justify-content: center;
-        margin-top: -140px; // Adjust as needed to align with caption
-        left: -50px;
-        bottom: 80px;
-    }
+    
 
     .image-container {
         position: relative; /* Keep the image relative */

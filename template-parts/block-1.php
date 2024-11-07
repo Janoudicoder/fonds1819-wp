@@ -5,7 +5,7 @@ li {
 }
 </style>
 <li class="wow fadeInUp" data-wow-delay="<?php echo $delay;?>ms">
-    <a title="<?php the_title();?>" href="<?php the_permalink();?>" class="item-block h-full block aspect-[4/5] bg-purple overflow-hidden relative text-white shadow-lg transition-transform duration-300 hover:-translate-y-1">
+    <a title="<?php the_title();?>" href="<?php the_permalink();?>" class="item-block h-full block aspect-[8/9] bg-purple overflow-hidden relative text-white shadow-lg transition-transform duration-300 hover:-translate-y-1">
         <div class="img-wrapper absolute h-full w-full top-0 left-0 z-10">
             <?php 
                 if (has_post_thumbnail()) {

@@ -1,24 +1,26 @@
 #footer-main {
-    
+    font-weight: 300;
     .foot-col {
-        padding-top: 0;
-        padding-bottom: 6;
+       
+        padding-top: 3rem;
+        padding-bottom: 4rem;
     
-        @media (min-width: 768px) {
-          padding-top: 8rem;
-          padding-bottom: 4rem;
-
-        }
+        
         h2{
            font-size: 32px; 
+           //font-weight: 300;
         }
         p{
             font-size: 14px;
+            font-family: $subfont;           
+
         }
         ul {
             font-size: 14px;
 
             li {
+              //  font-weight: 300;
+                font-family: $subfont;
                 // Remove display property to let the default work (inline-block is default for list items)
                 margin-bottom: 5px;
 
@@ -40,9 +42,17 @@
             }
         }
         
+        
         img {
             max-width: 100%;
             width: 200px;
+        }
+    }
+    @media (max-width: 768px) {
+        .foot-col {
+       
+            padding-top: 0rem;
+            padding-bottom: 0rem;
         }
     }
 }

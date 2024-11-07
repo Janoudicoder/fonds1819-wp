@@ -194,13 +194,13 @@
 	
 		// Menu links
 		> a {
-			padding: 1rem 1.5rem;
+			padding: 1rem 0.7rem;
 			display: inline-block;
 			position: relative;
 			text-decoration: none;
 			font-size: 18px;
 			font-weight: 600; /* Set to semi-bold */
-			font-family: 'Source Sans Pro', sans-serif; /* Ensure you have this font loaded */
+			font-family: 'Source Sans Pro'; /* Ensure you have this font loaded */
 			color: black;
 			@include transition(color .3s);
 	

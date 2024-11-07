@@ -33,14 +33,14 @@
 <body <?php body_class(); ?>>
 
 <section id="header" class="bg-white">
-    <div class="container mx-auto flex justify-between py-5">
+<div class="container mx-auto max-w-[1882px] flex justify-evenly py-5">
             <div id="logoWrapper" class="block">
             <a class="block" title="Ga naar de homepagina" href="<?php echo bloginfo('url'); ?>">
-                <img id="logo" class="h-[4rem] ml-auto" src="https://fonds1819.sitework.link/wp-content/uploads/2024/10/Rectangle.png" width="100%" border="0" alt="Naar de home page" />
+                <img id="logo" class="h-[3.4rem] ml-auto" src="https://fonds1819.sitework.link/wp-content/uploads/2024/10/Rectangle.png" width="100%" border="0" alt="Naar de home page" />
             </a>
         </div>
 
-        <div class="header__right flex flex-row-reverse lg:flex-row items-center">
+        <div class="header__right flex flex-row-reverse items-center  md:w-[842px] lg:flex-row">
             <nav id="navigation1" class="navigation font-semibold" role="navigation" aria-label="Main">
                 <div class="nav-header">
                     <button aria-expanded="false" type="button" title="open het hoofdmenu" class="nav-toggle font-semibold"></button>
@@ -67,13 +67,14 @@
                     )); 
                 ?>
             </nav>
-            <div class="contact-info text-white ml-4 relative hidden md:flex ">
-                <ul class="flex items-center ">
-                    <li>
-                        <button class="btn ">Quikscan</button>
-                    </li>
-                </ul>
-            </div>
+            <div class="contact-info text-white ml-4 relative hidden xl:flex">
+    <ul class="flex items-center">
+        <li>
+            <button class="btn hidden md:block">Quikscan</button>
+        </li>
+    </ul>
+</div>
+
         </div>
     </div>
 </section>

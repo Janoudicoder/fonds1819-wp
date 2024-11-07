@@ -1,172 +1,55 @@
+
+
 .hero-slider {
     padding: 0;
-    display: flex;
-    flex-direction: column; // Keep elements stacked vertically
-    align-items: flex-end; // Align elements to the right on larger screens
-
-    &::back {
-        .svg-wrapper {
-            position: absolute; // Make it absolute to position it below everything
-            left: 50%; // Center horizontally
-            transform: translateX(-50%); // Centering adjustment
-            bottom: -20px; // Position it beneath everything
-            display: flex;
-            justify-content: center;
-        }
-    }
+    box-shadow: 0px 10px 20px rgb(0 0 0 / 25%);
 
     .slick-slider {
         margin-bottom: 0 !important;
-        max-height: 80vh;
-        min-height: 250px;
-        width: 56vw;
-        height: 900px;
-
-        .slick-list {
-            height: 100%;
-
-            .slick-track {
-                height: 100%;
-
-                .slick-item {
-                    height: 100%;
-                    img {
-                        width: 100%; // Make image responsive to the container width
-                        height: auto; // Maintain aspect ratio
-                        min-height: 250px; // Minimum height for images
-                        max-height: 80vh; // Maximum height for images
-                    }
-                }
-            }
-        }
-
-        .slick-dots {
-            bottom: 0;
-            z-index: 11;
-            padding: 15px;
-            text-align: right;
-
-            li {
-                &.slick-active {
-                    button {
-                        opacity: 1;
-                    }
-                }
-
-                button {
-                    opacity: 0.3;
-                    background-color: $primary-color;
-                    border-radius: 50%;
-
-                    &::before {
-                        display: none;
-                    }
-                }
-            }
-        }
     }
 
     .hero-slider__caption {
-        inset-area: x-start; // Custom property if used in the layout context
-        border-bottom-left-radius: 55px;
-        width: 45vw;
-        height: 592px; // Updated height
-        background-color: #007EC3; // Updated background color
-        z-index: 10;
-        padding: 20px;
+       .caption-wrapper{
+        @media (min-width: 2300px) and (max-width: 2960px) {
+            padding-top: 8.5rem !important;
+             padding-bottom : 10.5rem  !important;
 
-        @media (width: 1440px) {
-            height: 480px;
+
         }
-        @media (width: 1024px) {
-            height: 480px;
-            .smaller-text {
-                width: 100%;
-                max-width: 613px;
-                min-width: 417px;
-                font-size: 0.875rem; // Example smaller font size (14px)
+
+
+
+        }
+
+        .hero-tekst {
+            p {
+                font-family: "Source Sans Pro"; 
+                font-size: 18px; 
+                margin: 14px;
+                @media (max-width: 1255px) {
+                    font-size: 14px; 
+
+                }
+                @media (min-width: 1784px) and (max-width: 2960px) {
+                    font-size: 30px;
+                }
+                
+
+
+
+              
             }
-        }
+            h1{
+                padding-left: 12px;
+                @media (min-width: 1784px) and (max-width: 2960px) {
+                    font-size: 65px; 
 
-        @include mq($tailwind_md) {
-            background-color: $secondary-color;
-        }
+                }
+                @media (max-width: 1255px) {
+                    font-size: 31px; 
 
-        .smaller-text {
-            width: 100%;
-            height: auto;
-            max-width: 613px;
-            min-width: 340px;
-            @apply text-sm sm:text-base lg:text-lg;
-        }
-    }
-
-    .svg-wrapper {
-        position: relative;
-        display: flex;
-        justify-content: center;
-        margin-top: -140px; // Adjust as needed to align with caption
-        left: -102px;
-        bottom: 80px;
-    }
-
-    @media (max-width: 768px) {
-        flex-direction: column;
-        align-items: center; // Center items on smaller screens
-
-        .slick-slider {
-            width: 96%; // Image width set to 96% on small screens
-            height: 47vh; // Image height set to 47% of viewport height
-            max-height: none;
-
-            .slick-list,
-            .slick-track {
-                height: 100%;
-            }
-
-            .slick-item {
-                height: auto;
-                img {
-                    width: 100%; // Ensure images are responsive
-                    height: auto; // Maintain aspect ratio
-                    min-height: auto; // Reset min-height
-                    max-height: none; // Remove max-height restriction
                 }
             }
-        }
-
-        .hero-slider__caption {
-            border-bottom-right-radius: 155px;
-            border-top-right-radius: 155px;
-            width: 82%; /* Full width for the caption */
-            height: auto; /* Auto height */
-            margin-top: -85px; /* No extra margin at the top */
-            padding: 5px 15px; /* Further reduced padding for a smaller box */
-            position: relative; /* Relative positioning */
-            bottom: auto; /* Remove fixed bottom positioning */
-            left: auto;
-            transform: none; /* Remove centering transform */
-            z-index: 10;
-            text-align: center; /* Center the text horizontally */
-            display: flex; /* Flexbox for vertical centering */
-            flex-direction: column; /* Stack text and buttons vertically */
-            justify-content: center; /* Horizontal centering */
-            align-items: center; /* Vertical centering */
-
-            .smaller-text {
-                width: 100%; /* Full width of the caption */
-                padding: 0; /* Remove padding for more space */
-                max-width: 100%; /* Ensure full width text */
-                min-width: auto; /* Reset min-width */
-                @apply text-sm; /* Smaller text for fitting */
-            }
-        }
-
-        /* Optional: Adjust button styles if needed */
-        .button-class { /* Replace with your button class */
-            margin-top: 3px; /* Add spacing above buttons */
-            padding: 5px 10px; /* Reduced padding for buttons */
-            font-size: 0.875rem; /* Smaller font size for buttons */
         }
     }
 }

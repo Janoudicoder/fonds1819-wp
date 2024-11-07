@@ -114,15 +114,23 @@ h1, h2, h3, h4, h5, h6 {
       align-items: center; // Center items verticaal
 
       // Stijl voor het pictogram na de link
-      &:after {
-          color: $primary-color; // Pictogramkleur
-          @include fa(); // Voeg Font Awesome-stijlen toe
-          font-weight: 600; // Vet gewicht voor het pictogram
-          content: "\f08e"; // Font Awesome-pictogram inhoud
-          font-family: "Font Awesome 5 Pro"; // Specificeer de Font Awesome lettertypefamilie
-          @include transition(300ms); // Voeg een overgangseffect toe voor het pictogram
-          margin-left: 5px; // Ruimte tussen tekst en pictogram
-      }
+      &::after {
+        @include fa();
+        content: "\f054"; /* Unicode for FontAwesome right arrow icon */
+        font-family: "Font Awesome 5 Pro";
+        margin-left: 8px; /* Adjusted margin-left to make spacing smaller */
+        font-size: 12px; /* Reduced font size for the arrow */
+        color: #000000; /* Black color for the icon */
+        background-color: white; /* Primary color background for the icon */
+        padding: 6px; /* Reduced padding to shrink the circle */
+        border-radius: 50%; /* Still fully round */
+        font-weight: 600;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: 24px; /* Reduced width */
+        height: 24px; /* Set height to match width for a smaller circle */
+    }
   }
 
   // Stijl voor iframes

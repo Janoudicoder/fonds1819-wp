@@ -10,9 +10,10 @@ $mqMobileS_BP: 350px;
 
 $tailwind_sm: 480px;
 $tailwind_md: 768px;
-$tailwind_lg: 976px;
-$tailwind_xl: 1200px;
+$tailwind_lg: 1024px;
+$tailwind_xl: 1300px;
 $tailwind_xxl: 1440px;
+$tailwind_xxxl: 2000px;
 
 /*media queries aanmaken*/
 /*voorbeeld voor aanroepen: @include mq(mqLaptop){ hier komt je css }*/
