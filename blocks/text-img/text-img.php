@@ -28,15 +28,10 @@ if ($verhouding == '50 - 50') {
 }
 
 if ($volgorde == 'tekst - afbeelding') {
-    // Class for the container to hold both the SVG background and content
     $containerClass = "relative flex items-center w-full h-full";
-
-    // SVG as a background
-    
-   
     $contentRechtsClass = "relative flex items-center w-full h-full order-1 lg:order-2"; 
     $contentRechts = '<div class="img-wrapper w-full relative overflow-hidden" style="box-shadow: 0px 10px 20px rgb(0 0 0 / 25%);" >';
-     // Add SVG background to content
+
     $contentRechts .= '<div class="absolute top-[-69px] pb-0 left-0 w-full h-[54px] ' . $hoofdfont . ' text-center  lg: mb-24 z-10 flex items-center justify-center lg:py-0 py-0">' 
         . $blocktitle . '</div>' 
         . wp_get_attachment_image($afbeelding['id'], 'full', "", array("class" => "w-full h-auto object-cover")) 
@@ -98,7 +93,7 @@ if ($tekst):
             left: 0;
             width: 100%;
             height: 25%;
-            background-color: #FFFFF0; /* Same background color */
+            background-color: #FFFFF0; 
             z-index: -1;
         }
     </style>

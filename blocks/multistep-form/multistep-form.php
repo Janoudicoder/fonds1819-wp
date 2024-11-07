@@ -15,13 +15,13 @@
                 </p>
             </div>
             <div class="flex items-center justify-between">
-                <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(1)">
-                    Ja
-                </button>
-                <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(-1, false)">
-                    Nee
-                </button>
-            </div>
+        <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(1)">
+            Ja
+        </button>
+        <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(-1, false)">
+            Nee
+        </button>
+    </div>
 
 
         <div id="step2" class="step hidden">
