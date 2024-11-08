@@ -25,7 +25,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <?php wp_head(); ?>
     
 </head>
@@ -40,7 +41,7 @@
             </a>
         </div>
 
-        <div class="header__right flex flex-row-reverse items-center  md:w-[842px] lg:flex-row">
+        <div class="header__right flex items-center flex-row-reverse sm:w-full md:w-[842px] lg:flex-row">
             <nav id="navigation1" class="navigation font-semibold" role="navigation" aria-label="Main">
                 <div class="nav-header">
                     <button aria-expanded="false" type="button" title="open het hoofdmenu" class="nav-toggle font-semibold"></button>

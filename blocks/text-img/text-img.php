@@ -30,7 +30,7 @@ if ($verhouding == '50 - 50') {
 if ($volgorde == 'tekst - afbeelding') {
     $containerClass = "relative flex items-center w-full h-full";
     $contentRechtsClass = "relative flex items-center w-full h-full order-1 lg:order-2"; 
-    $contentRechts = '<div class="img-wrapper w-full relative overflow-hidden" style="box-shadow: 0px 10px 20px rgb(0 0 0 / 25%);" >';
+    $contentRechts = '<div class="img-wrapper w-full relative overflow-hidden" style="box-shadow: -5px -5px 20px rgb(0 0 0 / 25%);" >';
 
     $contentRechts .= '<div class="absolute top-[-69px] pb-0 left-0 w-full h-[54px] ' . $hoofdfont . ' text-center  lg: mb-24 z-10 flex items-center justify-center lg:py-0 py-0">' 
         . $blocktitle . '</div>' 
@@ -53,7 +53,7 @@ elseif ($volgorde == 'afbeelding - tekst') {
     $contentLinksClass = "relative  flex flex-col items-start  w-full"; 
     $contentLinks = '<div class="absolute top-[-69px] pb-0 left-0 w-full h-[54px] ' . $hoofdfont . ' text-center text-[24px] lg:text-[40px] z-10 flex items-center justify-center lg:py-0 py-0">' 
     . $blocktitle . '</div>' 
-    . '<div class="img-wrapper w-full relative overflow-hidden" style="    box-shadow: 0px 10px 20px rgb(0 0 0 / 25%);">'
+    . '<div class="img-wrapper w-full relative overflow-hidden" style="    box-shadow: 10px 10px 20px rgb(0 0 0 / 25%);">'
     . wp_get_attachment_image($afbeelding['id'], 'full', "", array("class" => "w-full h-auto object-cover")) 
     . '<div class="svg-overlay absolute inset-0 w-full h-full pointer-events-none">'; // SVG container over the image
     $contentLinks .= '<img src="'.get_bloginfo('template_url').'/fa/webfonts/fotolinkslayer.svg" class="w-full h-full object-cover opacity-100" alt="SVG Overlay" />'; // SVG overlay
@@ -69,7 +69,7 @@ if ($tekst):
 ?>
  <section class="tekst-afbeelding pt-24 <?php echo ($volgorde == 'afbeelding - tekst') ? 'bg-[#FFFFF0] afbeelding-tekst' : 'my-0'; ?> md:my-0">
     <?php if ($volgorde == 'tekst - afbeelding'): ?>
-        <div class="svg absolute left-[59%] transform -translate-x-1/2 bottom-[-3rem] hidden md:block">
+        <div class="svg absolute left-[59%] transform -translate-x-1/2 bottom-[-3rem] hidden lg:block">
             <svg width="372" height="195" viewBox="0 0 372 195" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M339.616 61.9164C339.616 61.9164 144.5 166.465 96.4579 129.304C96.4579 129.304 58.2752 121.413 111.527 4.68077C113.957 -0.627141 109.852 1.06095 109.852 1.06095C109.864 1.08575 -14.466 87.1884 2.51902 159.573C2.51902 159.573 44.0018 277.813 371.323 78.0407L339.616 61.9164Z" fill="#00AF9B" fill-opacity="0.2"/>
             </svg>
@@ -89,10 +89,10 @@ if ($tekst):
         .afbeelding-tekst::after {
             content: '';
             position: absolute;
-            bottom: -25%;
+            bottom: -20%;
             left: 0;
             width: 100%;
-            height: 25%;
+            height: 20%;
             background-color: #FFFFF0; 
             z-index: -1;
         }

@@ -14,7 +14,7 @@ if (have_rows('afbeeldingen')) :
         echo '<div class="caption-wrapper text-white bg-secondary py-4 px-10 md:px-12 xl:px-20 sm:pt-4 xl:py-10 xxl:py-44 rounded-bl-[45px] mx-auto">';
 
         // New div for hero text
-        echo '<div class="hero-tekst text-center">'; 
+        echo '<div class="hero-tekst text-center" style="font-weight: 300;">'; 
         echo '<h2 class="text-[42px] mb-2 lg:text-[48px] xl:text-[56px] xxl:text-[64px]">' . $titelHeroSlider . '</h2>'; // Responsive Title
 
         // Check for subtitle and apply responsive sizes
@@ -69,7 +69,7 @@ echo '</div>';
     echo '</div>';
     echo '</div>';
     echo '<div class="absolute left-0 top-0 z-[0] w-full h-full overflow-visible">'; // Container with visible overflow
-    echo '<div class="absolute bottom-0 left-1/2 translate-x-[-60%] w-[20%] h-auto pointer-events-none z-0 hidden lg:block">'; // Show SVG only on large screens
+    echo '<div class="absolute bottom-[-2px] left-1/2 translate-x-[-60%] w-[20%] h-auto pointer-events-none z-0 hidden lg:block">'; // Show SVG only on large screens
         echo '<svg width="200" height="97" viewBox="0 0 200 97" fill="none" xmlns="http://www.w3.org/2000/svg">';
             echo '<path d="M66.7464 0L0 67.3209C0 67.3209 147.608 97 200 97V11.0995C200 11.0995 178.23 17.6144 66.7464 0Z" fill="#02B19A" fill-opacity="0.2"/>';
         echo '</svg>';

@@ -1,20 +1,22 @@
 
 <footer>
-    <section id="footer-main" class="bg-secondary text-white">
+    <section id="footer-main" class="bg-secondary z-[9]  text-white">
         <div class="container mx-auto p-6 grid pt-24 grid-cols-1 md:grid-cols-4 gap-4">
-<div class="foot-col col-span-1 md:col-span-4 lg:col-span-1 md:pt-32" style="padding-top:4rem;">
-                <img id="logo" class="h-[4rem] mb-4" src="https://fonds1819.sitework.link/wp-content/uploads/2024/10/footerlogo.png" width="100%" border="0" alt="Naar de home page" />
-            </div>
-            <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1">
-                <?php the_field('footer_kolom_1', 'option'); ?>
-            </div>
-            <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1">
-                <?php the_field('footer_kolom_2', 'option'); ?>
-            </div>
-            <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1">
-                <?php the_field('footer_kolom_3', 'option'); ?>
-            </div>
-        </div>
+            <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1 md:pt-32" style="padding-top:4rem;">
+                    <img id="logo" class="h-[4rem] mb-4" src="https://fonds1819.sitework.link/wp-content/uploads/2024/10/footerlogo.png" width="100%" border="0" alt="Naar de home page" />
+                </div>
+                <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1">
+                    <?php the_field('footer_kolom_1', 'option'); ?>
+                </div>
+                <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1">
+                    <?php the_field('footer_kolom_2', 'option'); ?>
+                </div>
+                <div class="foot-col col-span-1 md:col-span-4 lg:col-span-1">
+                    <?php the_field('footer_kolom_3', 'option'); ?>
+                </div>
+         </div>
+         
+         
     </section>
 	<section id="subFooter" class="bg-white">
     <div class="container mx-auto py-4 flex  flex-col md:flex-row md:justify-between md:items-center text-black" style="font-family: poppins; " > 
@@ -38,6 +40,11 @@
             </a>
         </div>
     </div>
+    <div class="absolute bottom-[463px] left-1/2 translate-x-[-189%] w-[20%] h-auto pointer-events-none z-2 hidden lg:block">            
+            <svg width="158" height="259" viewBox="0 0 158 259" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M143.58 3.36635L45.8471 79.7537C45.8471 79.7537 -17.5519 123.407 4.86215 218.498C7.35772 229.031 14.2899 237.99 22.7429 244.705C39.8056 258.279 70.4612 272.348 96.0956 228.582C101.205 219.904 104.879 210.462 107.521 200.737L156.657 21.3386C156.657 21.3386 161.181 -7.32352 143.58 3.36635Z" fill="#00AF9B" fill-opacity="0.2"/>
+            </svg>
+        </div>
 </section>
 
 </footer>

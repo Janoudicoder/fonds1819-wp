@@ -80,11 +80,7 @@
             setTimeout(() => alertDiv.remove(), 3000);
         }
     </script>
-<div class="absolute bottom-[-31px] left-[206px] w-[20%] h-auto pointer-events-none z-0 hidden lg:block">
-            <svg width="158" height="259" viewBox="0 0 158 259" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M143.58 3.36635L45.8471 79.7537C45.8471 79.7537 -17.5519 123.407 4.86215 218.498C7.35772 229.031 14.2899 237.99 22.7429 244.705C39.8056 258.279 70.4612 272.348 96.0956 228.582C101.205 219.904 104.879 210.462 107.521 200.737L156.657 21.3386C156.657 21.3386 161.181 -7.32352 143.58 3.36635Z" fill="#00AF9B" fill-opacity="0.2"/>
-            </svg>
-        </div>
+       
 
    
 </section>

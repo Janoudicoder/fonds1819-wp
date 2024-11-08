@@ -1,5 +1,5 @@
 $hoofdfont: 'Alegreya';
-$subfont: 'Source Sans Pro';
+$subfont: 'Source Sans 3';
 
 //--BASIS--//
 $font-size-base: 16px;
@@ -79,7 +79,7 @@ $font-size-dec: 6px;
 
 h1, h2, h3, h4, h5, h6 {
     margin-bottom: 0.5rem;
-    font-weight: 500;
+    font-weight: 300;
 }
 
 .standaard-content {
@@ -89,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   p {
       margin-bottom: 1rem; // Ruimte onder paragrafen
       font-size: 18px; // Stel het lettertypegrootte in
+      font-weight: 300;
   }
 
   // Stijl voor sterke elementen
