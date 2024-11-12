@@ -69,7 +69,7 @@ echo '</div>';
     echo '</div>';
     echo '</div>';
     echo '<div class="absolute left-0 top-0 z-[0] w-full h-full overflow-visible">'; // Container with visible overflow
-    echo '<div class="absolute bottom-[-2px] left-1/2 translate-x-[-60%] w-[20%] h-auto pointer-events-none z-0 hidden lg:block">'; // Show SVG only on large screens
+    echo '<div class="absolute bottom-[18px] left-1/2 translate-x-[-60%] w-[20%] h-auto pointer-events-none z-0 hidden lg:block">'; // Show SVG only on large screens
         echo '<svg width="200" height="97" viewBox="0 0 200 97" fill="none" xmlns="http://www.w3.org/2000/svg">';
             echo '<path d="M66.7464 0L0 67.3209C0 67.3209 147.608 97 200 97V11.0995C200 11.0995 178.23 17.6144 66.7464 0Z" fill="#02B19A" fill-opacity="0.2"/>';
         echo '</svg>';

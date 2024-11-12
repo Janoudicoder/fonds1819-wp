@@ -41,7 +41,7 @@
             </a>
         </div>
 
-        <div class="header__right flex items-center flex-row-reverse sm:w-full md:w-[842px] lg:flex-row">
+        <div class="header__right flex items-center flex-row-reverse lg:flex-row">
             <nav id="navigation1" class="navigation font-semibold" role="navigation" aria-label="Main">
                 <div class="nav-header">
                     <button aria-expanded="false" type="button" title="open het hoofdmenu" class="nav-toggle font-semibold"></button>

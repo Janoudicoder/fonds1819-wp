@@ -19,7 +19,7 @@
          
     </section>
 	<section id="subFooter" class="bg-white">
-    <div class="container mx-auto py-4 flex  flex-col md:flex-row md:justify-between md:items-center text-black" style="font-family: poppins; " > 
+    <div class="mx-auto py-4 flex  flex-col md:flex-row md:justify-around md:items-center text-black" style="font-family: poppins; " > 
         <div class="left flex items-center  justify-center md:justify-start">
             <span class="text-center md:text-left">&copy; <?=date('Y');?>, Fonds 1819</span>
             <span class="hidden md:inline  md:ml-4">Disclaimer</span>

@@ -1,5 +1,7 @@
 <section class="multiestep-form relative z-10 pb-24 flex justify-center items-center mb-[-125px]">
-    <div class="form-container bg-primary shadow-md p-6 flex flex-col justify-center items-center rounded-br-[24px]"> <!-- Added rounded-br-[24px] -->
+    <div class="form-container bg-primary shadow-md p-6 flex flex-col justify-center items-center rounded-br-[24px]">
+        
+        <!-- Stap 1 -->
         <div id="step1" class="step">
             <h2 class="text-xl font-bold mb-4 text-center text-white">Stap 1 van 5</h2>
             <p class="mb-4 text-white text-center-custom w-2/3 mx-auto" style="font-family: 'Source Sans Pro', sans-serif;">
@@ -15,35 +17,42 @@
                 </p>
             </div>
             <div class="flex items-center justify-between">
-        <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(1)">
-            Ja
-        </button>
-        <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(-1, false)">
-            Nee
-        </button>
-    </div>
-
+                <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(1)">
+                    Ja
+                </button>
+                <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(-1, false)">
+                    Nee
+                </button>
+            </div>
+        </div>
 
         <div id="step2" class="step hidden">
-            <h2 class="text-xl font-bold mb-4 text-center text-white">Stap 2: Adres</h2>
-            <p class="mb-4 text-white text-center-custom w-2/3 mx-auto" style="font-family: 'Source Sans Pro', sans-serif;">Vul je adres in:</p>
-            <div class="confirmation-bg p-4 rounded-lg">
-                <p class="text-white text-center-custom" style="font-family: 'Source Sans Pro', sans-serif;">Jouw adres: [Adres hier]</p>
-                <div class="flex justify-between mt-4 space-x-4">
-                    <button class="bg-white text-black w-full h-12 rounded-md hover:bg-gray-200 transition-colors" onclick="changeStep(1)">Ja, verder</button>
-                    <button class="bg-white text-black w-1/2 h-12 rounded-md hover:bg-gray-200 transition-colors" onclick="changeStep(-1, false)">Nee, terug</button>
-                </div>
+            <h2 class="text-xl font-bold mb-4 text-center text-white">Stap 2 van 5</h2>
+            <p class="mb-4 text-white text-center-custom w-2/3 mx-auto" style="font-family: 'Source Sans Pro', sans-serif;">
+                Ben je klant bij Sitework?
+            </p>
+            <div class="flex items-center justify-between">
+                <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(1)">
+                    Ja
+                </button>
+                <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(-1, false)">
+                    Nee
+                </button>
             </div>
         </div>
 
-        <div id="step5" class="step hidden">
-            <h2 class="text-xl font-bold mb-4 text-center text-white">Stap 5: Bedankt</h2>
-            <div class="confirmation-bg p-4 rounded-lg">
-                <p class="text-white text-center-custom" style="font-family: 'Source Sans Pro', sans-serif;">Bedankt voor het invullen van het formulier!</p>
+        <!-- Stap 3 -->
+        <div id="step3" class="step hidden">
+            <h2 class="text-xl font-bold mb-4 text-center text-white">Stap 3 van 5</h2>
+            <p class="mb-4 text-white text-center-custom w-2/3 mx-auto" style="font-family: 'Source Sans Pro', sans-serif;">
+                Goed!!
+            </p>
+            <div class="flex items-center justify-between">
+                <button class="w-[363px] h-12 bg-white text-black rounded-md rounded-br-[25px] hover:bg-[#005f8c] hover:text-white" onclick="changeStep(1)">
+                    Volgende
+                </button>
             </div>
         </div>
-        
-        
     </div>
 
     <script>
@@ -80,7 +89,4 @@
             setTimeout(() => alertDiv.remove(), 3000);
         }
     </script>
-       
-
-   
 </section>
