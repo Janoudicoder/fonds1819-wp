@@ -29,7 +29,7 @@ if (!empty($catId)) {
 $wp_query = new WP_Query($args);
 ?>
 
-<section class="relative my-8 md:my-12 overflow-hidden">
+<section class="relative mt-8 md:mt-12 overflow-hidden">
 
 
     <div class="absolute top-0 left-0 w-full h-full md:h-[70%] bg-secondary rounded-br-lg z-0"></div>

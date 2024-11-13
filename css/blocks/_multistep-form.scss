@@ -1,9 +1,11 @@
 .multiestep-form{
     p {
         font-size: 18px;
+        font-weight: 300;
     }
     h2 {
         font-size: 25px; /* Adjust heading size for smaller screens */
+        font-weight: 300;
     }
     border-bottom-right-radius: 45px; /* More rounded on the bottom-right corner */
 
@@ -48,6 +50,7 @@
         button {
             width: 43%; /* Make buttons full width */
             margin-top: 8px; /* Add margin for spacing */
+            font-weight: 500;
         }
 
         .btn-slider {
@@ -62,6 +65,10 @@
         margin-top: -140px; // Adjust as needed to align with caption
         left: -102px;
         bottom: 80px;
+    }
+    button {
+   
+        font-weight: 500;
     }
     
     

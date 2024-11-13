@@ -34,10 +34,10 @@
 <body <?php body_class(); ?>>
 
 <section id="header" class="bg-white">
-<div class="container mx-auto max-w-[1882px] flex justify-evenly py-5">
+<div class="container mx-auto max-w-[1882px] flex justify-evenly py-7">
             <div id="logoWrapper" class="block">
             <a class="block" title="Ga naar de homepagina" href="<?php echo bloginfo('url'); ?>">
-                <img id="logo" class="h-[3.4rem] ml-auto" src="https://fonds1819.sitework.link/wp-content/uploads/2024/10/Rectangle.png" width="100%" border="0" alt="Naar de home page" />
+                <img id="logo" class="h-[3.8rem] ml-auto" src="https://fonds1819.sitework.link/wp-content/uploads/2024/10/Rectangle.png" width="100%" border="0" alt="Naar de home page" />
             </a>
         </div>
 

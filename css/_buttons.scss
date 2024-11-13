@@ -78,13 +78,11 @@
             background-color: darken($secondary-color, 10);
         }
 
-        /* Styling for the arrow on the block button */
         
     }
 
     
     
-    /* Responsive styles for small screens */
     @media (max-width: 768px) {
         &.btn-slider {
             width: 140px; /* Adjust width on small screens */

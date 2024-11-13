@@ -5,7 +5,7 @@
     $tekstRechts = get_field('tekst_rechts');
 ?>
 
-<section class="text-smoelen my-8 md:my-8">
+<section class="text-smoelen my-8 md:mb-8">
     <div class="container mx-auto">
         <?php if($tweeKolommen):?>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-16 justify-center w-[736px]	 mx-auto">
